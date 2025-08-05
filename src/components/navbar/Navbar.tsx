@@ -10,7 +10,7 @@ function Navbar() {
           <Link to='/home' className="text-2xl font-bold">BioFarma</Link>
 
           <div className='flex gap-4'>
-            Categoria
+            <Link to='/categorias' className='hover:underline'>Categoria</Link>
             Produto
             {/* Perfil
             Sair */}
