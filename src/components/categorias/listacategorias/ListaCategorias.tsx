@@ -1,6 +1,14 @@
+import { useState } from "react";
 import CardCategorias from "../cardcategorias/CardCategorias";
+import type Categoria from "../../../models/Categoria";
+import { useNavigate } from "react-router-dom";
+
 
 function ListaCategorias() {
+
+  const navigate = useNavigate()
+
+    const [categorias, setCategorias] = useState<Categoria[]>([])
 
   return (
     <>
@@ -15,4 +23,5 @@ function ListaCategorias() {
     </>
   )
 }
+
 export default ListaCategorias;
