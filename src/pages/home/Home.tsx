@@ -1,18 +1,30 @@
 function Home() {
   return (
     <>
-      <div className="w-screen flex justify-center">
-        <div>
-        <div className="max-w-7xl flex flex-col items-center">
-            <h2>Seja Bem Vinde à BioFarma</h2><br/>
-            <p>Aqui você tem os melhores produtos e promoções!</p><br/>
+      <div className="bg-indigo-900 flex justify-center">
+        <div className='container grid grid-cols-2 text-white'>
+          <div className="flex flex-col gap-4 items-center justify-center py-4">
+            <h2 className='text-5xl font-bold'>
+              Seja Bem Vinde à BioFarma
+            </h2>
+            <p className='text-xl'>
+              Aqui você tem os melhores produtos e promoções!
+            </p>
+
+            <div className="flex justify-around gap-4">
+              <div className='rounded text-white 
+                            border-white border-solid border-2 py-2 px-4'
+                >
+                Novo Produto
+              </div>
+            </div>
           </div>
 
-          <div className="max-w-7xl flex flex-col items-center">
+          <div className="flex justify-center ">
             <img
               src="https://ik.imagekit.io/qctfo1npt/farmacia.png"
               alt="Imagem da Página Home"
-              width="250px"
+              className='w-2/3'
             />
           </div>
         </div>
