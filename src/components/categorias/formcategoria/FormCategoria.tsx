@@ -61,7 +61,7 @@ function FormCategoria() {
   }
 
   return (
-    <div className='border flex flex-col rounded-2xl bg-orange-100 overflow-hidden justify-between'>
+    <div className='border flex flex-col rounded-2xl items-center bg-orange-100 overflow-hidden justify-between'>
       <header className="text-4xl text-center my-8">
         {id ? "Editar Categoria" : "Cadastrar Categoria"}
       </header>
@@ -79,7 +79,7 @@ function FormCategoria() {
           />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col text-center gap-2">
           <label htmlFor="descricao">Descrição da Categoria</label>
           <input
             type="text"
